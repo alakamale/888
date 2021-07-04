@@ -42,5 +42,5 @@ Selecting option 4, we can delete a record in our database (Selection Table work
 2. Search with FILTERS
 3. Active results for different tables
 4. Unit Test
-5. Help
+5. CLI Help
   
