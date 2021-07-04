@@ -36,7 +36,7 @@ Selecting option 4, we can delete a record in our database (Selection Table work
         self.user = 'root'                          # Need to update running locally
         self.host = 'localhost'                     # Need to update running locally
  
- 
+ - Sample output filee located at : sample/Sample_Output.txt
  - Things pending for implementation, 
 1. Delete entries with foreign key
 2. Search with FILTERS
