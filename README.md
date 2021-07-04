@@ -7,7 +7,7 @@ You will need to install the library below:
 - pytz==2021.1
 - mysql_connector_repackaged==0.3.1
 - unicode_slugify==0.1.3
-You will need to instal MySQL.
+- You will need to instal MySQL.
         
 ## Operation
 ## Home screen
@@ -20,7 +20,7 @@ Selecting option 1, we can insert a new record in our database.
 
 ## Option 2
 Selecting option 2, we can read all parameters table.
-- Presentation of the complete database:
+- Presentation of the complete database.
 
 ## Option 3
 Selecting option 3, we can update our base records.
@@ -36,9 +36,11 @@ Selecting option 4, we can delete a record in our database (Selection Table work
         self.user = 'root'                          # Need to update running locally
         self.host = 'localhost'                     # Need to update running locally
  
+ 
  - Things pending for implementation, 
 1. Delete entries with foreign key
 2. Search with FILTERS
 3. Active results for different tables
 4. Unit Test
+5. Help
   
