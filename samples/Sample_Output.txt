@@ -1,0 +1,287 @@
+D:\python3\python.exe D:/WorkSpace/888_Pro/main.py
+
+Connection to the database made!!
+=========================
+  CRUD - SIMPLIFIED
+=========================
+1. ENTER NEW DATA:
+2. DISPLAY DATA:
+3. UPDATE DATA:
+4. DELETE ENTRY:
+5. EXIT
+
+Enter your choice : 1
+1. Sports 
+2. Events 
+3. Selection
+	Select table to add entry :  1
+<=== ADD SPORT ===>
+	Enter Sport name: Football
+# Do you want to continue adding Sport : y
+	Enter Sport name: Cricket
+# Do you want to continue adding Sport : y
+	Enter Sport name: Hockey
+# Do you want to continue adding Sport : n
+MESSAGE : SQL Query execute successfully.
+
+Connection to the database made!!
+=========================
+  CRUD - SIMPLIFIED
+=========================
+1. ENTER NEW DATA:
+2. DISPLAY DATA:
+3. UPDATE DATA:
+4. DELETE ENTRY:
+5. EXIT
+
+Enter your choice : 1
+1. Sports 
+2. Events 
+3. Selection
+	Select table to add entry :  2
+<=== ADD EVENT ===>
+1. Cricket
+2. Football
+3. Hockey
+	Select # from menu: 2
+	Enter Event name : Euro Championship 2021
+	Enter Event type(Preplay, Inplay) : Inplay
+	Enter Event status(Pending, Started, Ended or Cancelled) : Started
+	Enter date and time in YYYY-MM-DD Hour:Minute format : 2021-07-04 17:00
+Do you want to continue adding Event : y
+	Enter Event name : Copa America
+	Enter Event type(Preplay, Inplay) : Preplay
+	Enter Event status(Pending, Started, Ended or Cancelled) : Pending
+	Enter date and time in YYYY-MM-DD Hour:Minute format : 2021-12-12 23:23
+Do you want to continue adding Event : n
+MESSAGE : SQL Query execute successfully.
+
+Connection to the database made!!
+=========================
+  CRUD - SIMPLIFIED
+=========================
+1. ENTER NEW DATA:
+2. DISPLAY DATA:
+3. UPDATE DATA:
+4. DELETE ENTRY:
+5. EXIT
+
+Enter your choice : 1
+1. Sports 
+2. Events 
+3. Selection
+	Select table to add entry :  3
+<=== ADD SELECTION ===>
+1. Copa America
+2. Euro Championship 2021
+	Select # from menu: 2
+	Enter Selection name : June
+	Enter ticket price : 50
+	Enter Selection outcome(Unsettled, Void, Lose or Win) : Win
+Do you want to continue adding Selection : y
+	Enter Selection name : July
+	Enter ticket price : 60
+	Enter Selection outcome(Unsettled, Void, Lose or Win) : Win
+Do you want to continue adding Selection : n
+MESSAGE : SQL Query execute successfully.
+
+Connection to the database made!!
+=========================
+  CRUD - SIMPLIFIED
+=========================
+1. ENTER NEW DATA:
+2. DISPLAY DATA:
+3. UPDATE DATA:
+4. DELETE ENTRY:
+5. EXIT
+
+Enter your choice : 2
+Display Data, 
+=================
+  SPORTS TABLE
+=================
++--------------+----------+----------+
+| Sport Name   | Slug     |   Active |
+|--------------+----------+----------|
+| Cricket      | cricket  |        1 |
+| Football     | football |        1 |
+| Hockey       | hockey   |        1 |
++--------------+----------+----------+
+=================
+  EVENTS TABLE
+=================
++------------------------+------------------------+----------+---------+--------------+----------------+---------------------+---------------------+
+| Event Name             | Slug                   |   Active | Type    | Sport Name   | Event Status   | Schedule Start      | Actual Start        |
+|------------------------+------------------------+----------+---------+--------------+----------------+---------------------+---------------------|
+| Copa America           | copa-america           |        1 | preplay | Football     | Pending        | 2021-12-12 23:23:00 |                     |
+| Euro Championship 2021 | euro-championship-2021 |        1 | inplay  | Football     | Started        | 2021-07-04 17:00:00 | 2021-07-04 23:10:00 |
++------------------------+------------------------+----------+---------+--------------+----------------+---------------------+---------------------+
+=================
+  SELECTION TABLE
+=================
++------------------+------------------------+---------+----------+-----------+
+| Selection Name   | Event Name             |   Price |   Active | Outcome   |
+|------------------+------------------------+---------+----------+-----------|
+| July             | Euro Championship 2021 |      60 |        1 | Win       |
+| June             | Euro Championship 2021 |      50 |        1 | Win       |
++------------------+------------------------+---------+----------+-----------+
+
+Connection to the database made!!
+=========================
+  CRUD - SIMPLIFIED
+=========================
+1. ENTER NEW DATA:
+2. DISPLAY DATA:
+3. UPDATE DATA:
+4. DELETE ENTRY:
+5. EXIT
+
+Enter your choice : 3
+1. Sports 
+2. Events 
+3. Selection
+	Select table to add entry :  2
+=================
+  EVENTS TABLE
+=================
++------------------------+------------------------+----------+---------+--------------+----------------+---------------------+---------------------+
+| Event Name             | Slug                   |   Active | Type    | Sport Name   | Event Status   | Schedule Start      | Actual Start        |
+|------------------------+------------------------+----------+---------+--------------+----------------+---------------------+---------------------|
+| Copa America           | copa-america           |        1 | preplay | Football     | Pending        | 2021-12-12 23:23:00 |                     |
+| Euro Championship 2021 | euro-championship-2021 |        1 | inplay  | Football     | Started        | 2021-07-04 17:00:00 | 2021-07-04 23:10:00 |
++------------------------+------------------------+----------+---------+--------------+----------------+---------------------+---------------------+
+	Enter Event Name to edit : Copa America
+-----------
+Update Menu
+-----------
+1. Slug -> copa-america
+2. Active -> 1
+3. Type -> preplay
+4. Sport Name -> Football
+5. Event Status -> Pending
+6. Schedule Start -> 2021-12-12 23:23:00
+7. Actual Start -> None
+	Select # from menu to update: 2
+	Enter new value for Active : 0
+# Do you want to continue updating?  n
+MESSAGE : SQL Query execute successfully.
+
+Connection to the database made!!
+=========================
+  CRUD - SIMPLIFIED
+=========================
+1. ENTER NEW DATA:
+2. DISPLAY DATA:
+3. UPDATE DATA:
+4. DELETE ENTRY:
+5. EXIT
+
+Enter your choice : 2
+Display Data, 
+=================
+  SPORTS TABLE
+=================
++--------------+----------+----------+
+| Sport Name   | Slug     |   Active |
+|--------------+----------+----------|
+| Cricket      | cricket  |        1 |
+| Football     | football |        1 |
+| Hockey       | hockey   |        1 |
++--------------+----------+----------+
+=================
+  EVENTS TABLE
+=================
++------------------------+------------------------+----------+---------+--------------+----------------+---------------------+---------------------+
+| Event Name             | Slug                   |   Active | Type    | Sport Name   | Event Status   | Schedule Start      | Actual Start        |
+|------------------------+------------------------+----------+---------+--------------+----------------+---------------------+---------------------|
+| Copa America           | copa-america           |        0 | preplay | Football     | Pending        | 2021-12-12 23:23:00 |                     |
+| Euro Championship 2021 | euro-championship-2021 |        1 | inplay  | Football     | Started        | 2021-07-04 17:00:00 | 2021-07-04 23:10:00 |
++------------------------+------------------------+----------+---------+--------------+----------------+---------------------+---------------------+
+=================
+  SELECTION TABLE
+=================
++------------------+------------------------+---------+----------+-----------+
+| Selection Name   | Event Name             |   Price |   Active | Outcome   |
+|------------------+------------------------+---------+----------+-----------|
+| July             | Euro Championship 2021 |      60 |        1 | Win       |
+| June             | Euro Championship 2021 |      50 |        1 | Win       |
++------------------+------------------------+---------+----------+-----------+
+
+Connection to the database made!!
+=========================
+  CRUD - SIMPLIFIED
+=========================
+1. ENTER NEW DATA:
+2. DISPLAY DATA:
+3. UPDATE DATA:
+4. DELETE ENTRY:
+5. EXIT
+
+Enter your choice : 4
+1. Sports 
+2. Events 
+3. Selection
+	Select table to add entry :  3
+=================
+  SELECTION TABLE
+=================
++------------------+------------------------+---------+----------+-----------+
+| Selection Name   | Event Name             |   Price |   Active | Outcome   |
+|------------------+------------------------+---------+----------+-----------|
+| July             | Euro Championship 2021 |      60 |        1 | Win       |
+| June             | Euro Championship 2021 |      50 |        1 | Win       |
++------------------+------------------------+---------+----------+-----------+
+	Enter Selection Name to Delete : June
+MESSAGE : SQL Query execute successfully.
+
+Connection to the database made!!
+=========================
+  CRUD - SIMPLIFIED
+=========================
+1. ENTER NEW DATA:
+2. DISPLAY DATA:
+3. UPDATE DATA:
+4. DELETE ENTRY:
+5. EXIT
+
+Enter your choice : 2
+Display Data, 
+=================
+  SPORTS TABLE
+=================
++--------------+----------+----------+
+| Sport Name   | Slug     |   Active |
+|--------------+----------+----------|
+| Cricket      | cricket  |        1 |
+| Football     | football |        1 |
+| Hockey       | hockey   |        1 |
++--------------+----------+----------+
+=================
+  EVENTS TABLE
+=================
++------------------------+------------------------+----------+---------+--------------+----------------+---------------------+---------------------+
+| Event Name             | Slug                   |   Active | Type    | Sport Name   | Event Status   | Schedule Start      | Actual Start        |
+|------------------------+------------------------+----------+---------+--------------+----------------+---------------------+---------------------|
+| Copa America           | copa-america           |        0 | preplay | Football     | Pending        | 2021-12-12 23:23:00 |                     |
+| Euro Championship 2021 | euro-championship-2021 |        1 | inplay  | Football     | Started        | 2021-07-04 17:00:00 | 2021-07-04 23:10:00 |
++------------------------+------------------------+----------+---------+--------------+----------------+---------------------+---------------------+
+=================
+  SELECTION TABLE
+=================
++------------------+------------------------+---------+----------+-----------+
+| Selection Name   | Event Name             |   Price |   Active | Outcome   |
+|------------------+------------------------+---------+----------+-----------|
+| July             | Euro Championship 2021 |      60 |        1 | Win       |
++------------------+------------------------+---------+----------+-----------+
+
+Connection to the database made!!
+=========================
+  CRUD - SIMPLIFIED
+=========================
+1. ENTER NEW DATA:
+2. DISPLAY DATA:
+3. UPDATE DATA:
+4. DELETE ENTRY:
+5. EXIT
+
+Enter your choice : 5

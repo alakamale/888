@@ -1,0 +1,4 @@
+tabulate==0.8.9
+pytz==2021.1
+mysql_connector_repackaged==0.3.1
+unicode_slugify==0.1.3
